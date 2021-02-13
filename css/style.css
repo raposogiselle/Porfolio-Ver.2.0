@@ -10,23 +10,26 @@ body {
 
 .header {
     height: 100vh;
-    background-image: url(./img/background.jpg);
+    background-image: url(img/background.jpg);
     background-size: cover;
     background-position: top;
 
 }
 
-.hi-box {
+.h1-box {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, 50%);
+    text-align: center;
+
 
 }
 
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main{
@@ -41,5 +44,24 @@ body {
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 4.5px;
+} 
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+}
 
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translate(-1px);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #b6b2b2;
 }
