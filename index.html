@@ -13,30 +13,101 @@
     <title>Giselle Raposo Portfolio</title>
 </head>
 <body>
+
+    <div class="navigation"></div>
+        <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation-button">Menu</label>
+
+        <div class="navigation-background">&nbsp;</div>
+
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+               <li class="navigation-item"><a href="#" class="navigation-link">About Me</a></li> 
+               <li class="navigation-item"><a href="#" class="navigation-link">My Work</a></li> 
+               <li class="navigation-item"><a href="#" class="navigation-link">My Skillset</a></li>
+               <li class="navigation-item"><a href="#" class="navigation-link">Contact Me</a></li>
+            </ul>
+        </nav>
+
+
     <header class="header">
         <div class="hi-box">
             <h1 class="heading-primary">Hi! I am Giselle</h1>
                 <span class="heading-primary-main">A Web Developer student with a vivid imagination</span>
                 <span class="heading-primary-sub">and a keenness for aesthetics.</span>
 
-            <a href="#" class="btn-hired">Hire Me</a>
+            <a href="#" class="btn btn-hired">Hire Me &rarr;</a>
         </div> 
     </header>
     <main>
-        <section class="section-about">
-            <div class="u-center-text"></div>
-                <h2 class="heading-secondary">
-                    About Me
-                    <p class="paragraph">I am a New York City based Stylist. Currently enrrolled in a Full Stack Web Development Bootcamp program at Columbia University. At the moment I am receiving more information that i can posibly think possible to absorb. i have no doubt the in due time all this knowledge will translate into exciting cutting edge projects. since i love fashion so much it will be no suprise that that merge between High Tech and Fashion is what brought me here, and I can't wait to be part of it. F
-                        Glow in the dark fiber optic dresses, Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eius itaque sequi eaque iusto nemo ratione voluptates. Iusto corporis earum quod eius modi ducimus quia quasi eligendi quo aspernatur amet similique cumque incidunt beatae molestiae accusamus magni, cum error natus, sunt dolorum atque laboriosam, provident aut! Est necessitatibus maxime animi illum repellat eius expedita aut labore fuga at. Eius doloremque, ducimus aliquid earum beatae perspiciatis non a corrupti asperiores mollitia, sapiente, odio voluptate culpa reiciendis?</p>
-                </h2>
+        <header>
+            <h2 class="heading-secondary">
+                About Me
+            </h2>    
+        </header>
+        <section class="flex-container-about">
+            <div class="flex-child-text">
+                <p class="paragraph">I am a New York City based Stylist. Currently enrrolled in a Full Stack Web Development Bootcamp program at Columbia University. Excited thinking of all the doors this knowledge will open. I have no doubt that in due time all this knowledge will translate into exciting cutting edge projects to be showcased here.
+                        Since fashion is something I am so passionate about is no suprise <em>"The Astounding World of Fashion and Technology Merging"</em> caught my attentiom and I can't wait to be part of it. 
+                    </p>
             </div>
 
-            <div class="main-section-img">
-                    image composition
+            <div class="flex-child-img">
+                <img src="../Portfolio-Ver-01.0.0/images/headShot.JPG" alt="blonde female" class="main-photo">
             </div>
         </section>
+
+        <section class="skills">
+            <div class="u-text-center">
+                <h2 class="heading-secondary">
+                    My Skillset
+                </h2>
+                <p class="paragraph-skillset">After completion of Full Stack Web Development Bootcamp from Columbia University I will have gained In-Demand skills like HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, Git. Besides a Portfolio of projects relevant to each area mastered.
+                </p>
+            </div>
+        </section>
+
+        <section class="work">
+            <h2 class="heading-secondary">
+                My Work
+            </h2>
+            <p class="paragraph">Work in progress.</p>
+            <div class="work-images">
+                <div class="composition">
+                    <img src="images/fiberoptic-organza.jpg" alt="Organza fiberoptic dress" class="composition__photo composition__photo--p1">
+                    <img src="images/cyber-runway.jpg" alt="cyber runway" class="composition__photo composition__photo--p2">
+                    <img src="images/high-tech-fashion.jpg" alt="high-tech dresses" class="composition__photo composition__photo--p3">
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-left">
+                <div class="footer-navigation">
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="https://www.linkedin.com/in/giselleraposowebdev/" class="footer-link">linkedin</a></li>
+                        <li class="footer-item"><a href="https://github.com/raposogiselle" class="footer-link">Github</a></li>
+                        <li class="footer-item"><a href="https://twitter.com/RaposoGiselle" class="footer-link">Twitter</a></li>
+                        <li class="number">347.524.9497</li>
+                        <li>
+                            <a href="mailto:raposo_gigi@icloud.com" class="number">raposo_gigi@icloud.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-copyright">
+                    Built by <a href="https://github.com/raposogiselle" class="footer-item">Giselle Raposo &#169 2021</a>
+                
+                </p>
+            </div>
+
+        </div>
+    </footer>
     
 </body>
 </html>
