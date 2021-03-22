@@ -7,10 +7,7 @@
     --magenta: #ba1377;
 
 }
-/*.navigation {
-    
-}*/
-
+/*  
 .navigation-checkbox {
     display: none;
 }
@@ -38,7 +35,7 @@
     z-index: 1000;
 }
 
-    /*transform: scale(80);*/
+    transform: scale(80);
 
 .navigation-nav {
     height: 100vh;
@@ -81,7 +78,8 @@
 :checked ~ .navigation-background {
     transform: scale(80);
 }
-
+navigation page with radio button hack still not working
+/*  */
 .header { 
     height: 100vh;
     background-image: url("../images/background.jpg");
@@ -211,34 +209,32 @@
 
 .composition {
     position: relative;
+    height: 100vh;
 }
 
 .composition__photo {
-    width: 55%;
-    box-shadow: 0 15px 40px rgba black, 40;
-    border-radius: 2px;
+    width: 45%;
+    box-shadow: 0 15px 40px rgba( black, 40);
+    border-radius: 3px;
     position: absolute;
 }
 
 .composition__photo--p1 {
-    left: 0;
-    top: -20px;
+    
+    
 }
 
 .composition__photo--p2 {
-    right: 0;
-    top: 20px;
+    
 }
 
 .composition__photo--p3 {
-    left: 20%;
-    top: 10rem;
+    
 }
 
 
 .footer{
     background-color: #669cee;
-    margin-top: 90px;
     padding: 75px;
     font-size: 1.4rem;
 }
