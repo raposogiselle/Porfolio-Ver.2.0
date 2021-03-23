@@ -165,7 +165,7 @@ navigation page with radio button hack still not working
 }
 
 .main-photo {
-    height: 490px;
+    height: 400px;
     width: 300px;  
     margin-top: 30px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -207,23 +207,15 @@ navigation page with radio button hack still not working
     margin-right: 60px;
 }
 
-.composition {
-    position: relative;
-    height: 100vh;
+.image-1 {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 65px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.composition__photo {
-    width: 45%;
-    box-shadow: 0 15px 40px rgba( black, 40);
-    border-radius: 3px;
-    position: absolute;
-}
-
-.composition__photo--p1 {
-    
-    
-}
-
+/*
 .composition__photo--p2 {
     
 }
@@ -231,7 +223,7 @@ navigation page with radio button hack still not working
 .composition__photo--p3 {
     
 }
-
+*/
 
 .footer{
     background-color: #669cee;
