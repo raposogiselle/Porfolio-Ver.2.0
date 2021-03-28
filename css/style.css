@@ -7,12 +7,12 @@
     --magenta: #ba1377;
 
 }
-/*  
-.navigation-checkbox {
+ 
+.navigation_checkbox {
     display: none;
 }
 
-.navigation-button {
+.navigation_button {
     background-color: #fffcfc;
     height: 7rem;
     width: 7rem;
@@ -21,9 +21,9 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: o 1rem 3rem #555555;
+    box-shadow: 0 1rem 3rem #555555, .1;  
 
-}
+} 
 .navigation-background {
     height: 6rem;
     width: 6rem;
@@ -31,57 +31,63 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient(#faf5f8, #ba1377);
+    background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
     z-index: 1000;
+
+    /* transform: scale(80); */
 }
-
+span {
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+.navigation-checkbox:checked ~ .navigation-background {
     transform: scale(80);
+}   
 
-.navigation-nav {
+ .navigation_nav {
     height: 100vh;
+    /* width: 100%; */
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1500;
 
     opacity: 0;
-    width: 0;
+    width: 0; 
 
 
 }
-.navigation-list{
+.navigation_list{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 40%;
+    transform: translate(50%, 50%);
     list-style: none;
     text-align: center;
 
 
 }
-.navigation-item {
-    padding: 1rem;
+.navigation_item {
+    margin: 1rem; 
 
 }
 
-.navigation-link {
+.navigation_link {
     font-size: 3rem;
     font-weight: 300;
     padding: 1rem 2rem;
     color: var(--off-white1);
     text-decoration: none;
     text-transform: uppercase;
-    background-size: 100%;
-}
+    /* background-image: linear-gradient(120deg,  #5494CA 0%,  #5494CA 50%,  #fffcfc 50%);
+    background-size: 200%;
+    transition: all .4s; */
+} 
 
-.navigation-checkbox
-:checked ~ .navigation-background {
-    transform: scale(80);
-}
-navigation page with radio button hack still not working
-/*  */
+
+
 .header { 
-    height: 100vh;
+    height: 95vh;
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: top;
@@ -90,8 +96,8 @@ navigation page with radio button hack still not working
 
 .hi-box {
     position: absolute;
-    top: 45%;
-    left: 35%;
+    top: 70%;
+    left: 50%;
     transform: translate(-50, -50%);
     text-align: center;
 }
@@ -146,35 +152,10 @@ navigation page with radio button hack still not working
     color: #eee5e5;
     font-size: 14px;
 }
-
-.flex-container-about {
-    background-color: var(--off-white1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 70px;
-}
-
-.flex-child-text {
-    flex: 1;
-    margin: 30PX;
-    padding: 30px;
-    align-self: center;
-    max-width: 50%;
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.main-photo {
-    height: 400px;
-    width: 300px;  
-    margin-top: 30px; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
    
-    
 .heading-secondary {    
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 200;
     color: #555555;
     letter-spacing: 2px;
     display: block;
@@ -182,10 +163,68 @@ navigation page with radio button hack still not working
     padding-top: 60px;
     margin-bottom: 60px;
     margin-top: 60px;
+    border-bottom: 1px solid #555555;
+    display: block;
     
 }
 
-.paragraph {
+.scene {
+    width: 469px;
+    height: 640px;
+    margin: auto;
+    perspective: 600px;
+}
+  
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #555555;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 0.5in;
+    padding: 20px;
+    backface-visibility: hidden;
+  }
+  
+.card__face--front {
+    background: #ffffff;
+  }
+  
+.card__face--back {
+    background-image: url(../images/headShot.JPG);
+    transform: rotateY(180deg);
+  }
+  .btn
+  .btn-aboutMe {
+    background-color: #555555;
+    border-radius: 30px;
+    color: var(--off-white1);
+    font-size: 18px;
+    font-family: Josefin;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  .paragraph {
     font-size: 25px;  
     line-height: 0.5in;
     font-weight: lighter;
@@ -215,20 +254,11 @@ navigation page with radio button hack still not working
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*
-.composition__photo--p2 {
-    
-}
-
-.composition__photo--p3 {
-    
-}
-*/
 
 .footer{
-    background-color: #669cee;
-    padding: 75px;
-    font-size: 1.4rem;
+  background-image: linear-gradient(315deg, #5494CA 0%, #0060A8 74%);
+  padding: 75px;
+  font-size: 1.4rem;
 }
 
 /*.footer-navigation {
@@ -238,11 +268,11 @@ navigation page with radio button hack still not working
     list-style: none;
     display: inline-block;
     font-size: 24px;
-}
+} */
 
-.footer-item:not(:last-child) {
+/* .footer-item:not(:last-child) {
     margin-right: 20px;
-}
+} */
 
 .footer-item {
     display: inline-block;
@@ -286,21 +316,14 @@ navigation page with radio button hack still not working
     margin-bottom: 55px;
 }
 
-.footer-right {
-    text-align: right;
-    text-transform: uppercase;
-    font-weight: lighter;
-}
-    
+
 
 
     
 
 
 
-/*.footer-link {
 
-}*/
 
 
 
